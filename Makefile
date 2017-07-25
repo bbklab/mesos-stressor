@@ -9,7 +9,7 @@ build:
 	go build -o stressor .
 
 run: build
-	./stressor 192.168.1.196 100 10  ${IMG}
+	./stressor 192.168.1.196:5050 100 10  ${IMG}
 
 clean:
 	rm -rfv stressor
